@@ -1,5 +1,6 @@
 ﻿using Azwebapp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -13,18 +14,23 @@ namespace Azwebapp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration configuration;
+
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
+            this.configuration = configuration;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            ViewBag.text = configuration["APPSETTING_Test"];
             return View();
         }
 
         public IActionResult Privacy()
         {
+            throw new Exception("Something Went Wrong");
             return View();
         }
 

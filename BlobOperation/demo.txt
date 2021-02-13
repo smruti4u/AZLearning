@@ -1,0 +1,9 @@
+https://azsaleran.blob.core.windows.net/container/azwebapplication.PublishSettings
+
+26a87a35-9b7e-4694-bf69-ad25db89b835
+
+?sv=2019-12-12
+&ss=b&srt=sco&sp=rwdlacx&
+se=2021-01-31T22:59:08Z&st=2021-01-31T14:59:08Z&
+spr=https
+&sig=efnp%2Fglh1DM3AIkc4ZL8%2FJ6c7DkOPHADecnBvYE5s%2F8%3D
