@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB.DotNetSDK", "Cosmo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB.SP_Triggers_UDFS", "CosmosDB.SP_Triggers_UDFS\CosmosDB.SP_Triggers_UDFS.csproj", "{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureADWebAPP", "AzureADWebAPP\AzureADWebAPP.csproj", "{8B580F46-762A-42A0-A830-8D0F1E128CED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureKeyVault", "AzureKeyVault\AzureKeyVault.csproj", "{FEF02A3B-C689-4AD3-8682-B068B1D0AC32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInsight", "AppInsight\AppInsight.csproj", "{6986766C-5CB0-4F1B-A1CD-70A6A2E8C76F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B580F46-762A-42A0-A830-8D0F1E128CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B580F46-762A-42A0-A830-8D0F1E128CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B580F46-762A-42A0-A830-8D0F1E128CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B580F46-762A-42A0-A830-8D0F1E128CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF02A3B-C689-4AD3-8682-B068B1D0AC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF02A3B-C689-4AD3-8682-B068B1D0AC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF02A3B-C689-4AD3-8682-B068B1D0AC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF02A3B-C689-4AD3-8682-B068B1D0AC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6986766C-5CB0-4F1B-A1CD-70A6A2E8C76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6986766C-5CB0-4F1B-A1CD-70A6A2E8C76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6986766C-5CB0-4F1B-A1CD-70A6A2E8C76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6986766C-5CB0-4F1B-A1CD-70A6A2E8C76F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

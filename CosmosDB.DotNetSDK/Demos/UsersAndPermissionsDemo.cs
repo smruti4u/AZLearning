@@ -11,7 +11,7 @@ namespace CosmosDb.DotNetSdk.Demos
 	public static class UsersAndPermissionsDemo
 	{
 		public static Uri MyDbDatabaseUri =>
-			UriFactory.CreateDatabaseUri("mydb1");
+			UriFactory.CreateDatabaseUri("mydb");
 
 		public async static Task Run()
 		{

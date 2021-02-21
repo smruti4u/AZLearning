@@ -14,7 +14,7 @@ namespace CosmosDb.ServerSide.Demos
 	public static class StoredProceduresDemo
 	{
 		public static Uri MyStoreCollectionUri =>
-			UriFactory.CreateDocumentCollectionUri("mydb", "mystore");
+			UriFactory.CreateDocumentCollectionUri("mydb", "test");
 
 		public async static Task Run()
 		{

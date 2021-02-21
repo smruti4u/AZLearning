@@ -10,7 +10,7 @@
 	}
 
 	var testForWeekDay = weekday.substring(0, 3).toLowerCase();
-	var testForWeekDays = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+	var testForWeekDays = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]; //SON
 	var properWeekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 	var isValid = false;

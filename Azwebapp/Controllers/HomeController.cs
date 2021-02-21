@@ -1,4 +1,5 @@
 ﻿using Azwebapp.Models;
+using Azwebapp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -16,15 +17,19 @@ namespace Azwebapp.Controllers
 
         private readonly IConfiguration configuration;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
+        private readonly IKeyVaultService kvService;
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, IKeyVaultService kvService)
         {
             this.configuration = configuration;
+            this.kvService = kvService;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            ViewBag.text = configuration["APPSETTING_Test"];
+            var value = configuration["devconnectionstring"];
+            var connectionString = await kvService.GetValue();
+            ViewBag.text = connectionString;
             return View();
         }
 
